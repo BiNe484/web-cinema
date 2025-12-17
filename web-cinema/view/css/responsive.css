@@ -1,0 +1,32 @@
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px ) { 
+    
+}
+
+/* Small Medium devices (desktops, 769px and up) */
+@media screen and (min-width: 769px ) { 
+    [class^="col-"] {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .paymentbutton {
+        margin-right: 32px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px ) { 
+    [class^="col-"] {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px ) { 
+    [class^="col-"] {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

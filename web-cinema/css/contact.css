@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-shadow: 2px 4px black;
+}
+.membersavt{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 60px;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 100px;
+}
+.containmembers{
+    color: white;
+    margin-top: 46px;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+.avt{
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap:28px;
+}
+.avt img{
+    margin-bottom: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.Triet,.Khanh,.Duyen,.Trong{
+    margin-top: 36px;
+    width: 280px;
+    height: 180px;
+}
+.in4{
+    box-shadow: 6px 6px 6px 6px black;
+    border-radius: 20px;
+    margin-top: -38px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 180px;
+}
+.in4 .ind{
+    padding-top: 64px;
+}
+.ind address,.ind p{
+    margin-top: 16px;
+}
+.contactmedia{
+    width: 100%;
+    height: 320px;
+    background-color: rgb(15, 15, 15);
+}
+.map{
+    display: flex;
+    justify-content:center;
+    gap:240px;
+    margin-left: 20px;
+}
+.ggmap{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 3px solid rgb(107, 107, 0);
+    width: 240px;
+    height: 180px;
+}
+.qr{
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 130px;
+}
+.momo{
+    color: rgb(240, 9, 144);
+}
+.contactus p, .position p{
+    color: white;
+}
+.map a{
+    color: rgb(31, 113, 255);
+    text-decoration: none;
+}
+.map h2{
+    text-shadow: 2px 2px black;
+    margin-top: 20px;
+    color: rgb(201, 4, 4);
+}
+.contactus p{
+    margin-top: 10px;
+}
+@media (max-width:860px){
+    .avt{
+        padding-bottom: 100px;
+        display: inline-block;
+        align-items: center;
+    }
+    .Khanh,.Duyen,.Trong{
+        margin-top: 100px;
+    }
+    .membersavt{
+        padding-bottom: 960px;
+    }
+    .map{
+        justify-content: space-around;
+        gap:0;
+    }
+}

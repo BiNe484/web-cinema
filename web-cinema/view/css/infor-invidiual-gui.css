@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+  --font-size-5xl: 24px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-firebrick: #af0000;
+  --color-white: #fff;
+  --color-gray: #1f1f1f;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-14xl: 33px;
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-10xs: 3px;
+  --padding-xl: 20px;
+  --padding-4xs: 9px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+}
+.headerframe {
+  height: 84px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-gray);
+  display: none;
+  max-width: 100%;
+}
+.cinema,
+.trangchu {
+  position: relative;
+  white-space: nowrap;
+  z-index: 1;
+}
+.cinema {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.trangchu {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 115px;
+}
+.navigation-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0 0;
+}
+.rap {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 44px;
+  z-index: 1;
+}
+.navigation-area,
+.navigation-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.navigation-links {
+  flex-direction: column;
+  padding: var(--padding-xl) 0 0;
+}
+.navigation-area {
+  flex-direction: row;
+  gap: 19px;
+  max-width: 100%;
+}
+.vecuatoi {
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  color: inherit;
+  display: inline-block;
+  min-width: 97px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.findtextbox,
+.personal-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2px 0 0;
+}
+.findtextbox {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #d9d9d9;
+  height: 28px;
+  flex: 1;
+  border-radius: 7px;
+  flex-direction: row;
+  padding: 4px 7px 5px;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--color-black);
+  min-width: 189px;
+  z-index: 1;
+}
+.dangnhap {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 92px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.account-actions {
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 7px;
+  font-size: 18px;
+}
+.account-actions,
+.account-area,
+.main-content,
+.user-features {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.account-area {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.main-content,
+.user-features {
+  box-sizing: border-box;
+}
+.user-features {
+  width: 535px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 13px 0 0;
+  font-size: 20px;
+}
+.main-content {
+  align-self: stretch;
+  background-color: var(--color-gray);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px 86px 12px 65px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.inforinvidiual {
+  position: relative;
+}
+.personal-information {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.dateofbirth,
+.fullname {
+  position: relative;
+}
+.name-date-area,
+.personal-data-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.name-date-area {
+  gap: 51px;
+}
+.personal-data-fields {
+  padding: var(--padding-4xs) 0 0;
+}
+.boxdateofbirth,
+.boxfullname {
+  align-self: stretch;
+  height: 57px;
+  position: relative;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--color-firebrick);
+  box-sizing: border-box;
+}
+.name-date-input,
+.personal-data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.name-date-input {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-14xl);
+  min-width: 324px;
+}
+.personal-data {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 79px;
+}
+.e-mail {
+  position: relative;
+  display: inline-block;
+  min-width: 81px;
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) 0 0;
+}
+.boxemail {
+  height: 57px;
+  width: 498px;
+  position: relative;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--color-firebrick);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.contact-input-area {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.sodienthoai {
+  position: relative;
+}
+.sodienthoai-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) 0 0;
+  box-sizing: border-box;
+}
+.boxphonenumber {
+  height: 57px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--color-firebrick);
+  box-sizing: border-box;
+  min-width: 324px;
+  max-width: 100%;
+}
+.contact-details,
+.contact-input-area1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.contact-input-area1 {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 29px;
+}
+.contact-details {
+  width: 727px;
+  flex-direction: column;
+  gap: var(--gap-14xl);
+}
+.contact-info,
+.thongtincanhan {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  text-align: left;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.contact-info {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 21px 0 var(--padding-xl);
+  max-width: 100%;
+  font-size: var(--font-size-13xl);
+}
+.thongtincanhan {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 155px;
+  gap: 64.5px;
+  letter-spacing: normal;
+  line-height: normal;
+  font-size: 36px;
+}
+@media screen and (max-width: 900px) {
+  .account-actions {
+    display: none;
+  }
+  .main-content {
+    padding-left: 32px;
+    padding-right: 43px;
+    box-sizing: border-box;
+  }
+  .inforinvidiual {
+    font-size: 29px;
+  }
+  .dateofbirth,
+  .fullname {
+    font-size: var(--font-size-7xl);
+  }
+  .personal-data {
+    gap: 39px;
+  }
+  .e-mail,
+  .sodienthoai {
+    font-size: var(--font-size-7xl);
+  }
+  .contact-details {
+    gap: var(--gap-base);
+  }
+  .thongtincanhan {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .name-date-input {
+    gap: var(--gap-base);
+  }
+  .contact-input-area {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-content {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .inforinvidiual {
+    font-size: 22px;
+  }
+  .dateofbirth,
+  .fullname {
+    font-size: var(--font-size-lgi);
+  }
+  .personal-data {
+    gap: var(--gap-xl);
+  }
+  .e-mail,
+  .sodienthoai {
+    font-size: var(--font-size-lgi);
+  }
+  .thongtincanhan {
+    gap: var(--gap-base);
+  }
+}

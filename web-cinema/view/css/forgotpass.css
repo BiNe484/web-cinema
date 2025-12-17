@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 0 10px rgba(255, 255, 255,0.1);
+}
+form{
+    height: 400px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 35px;
+}
+label{
+    letter-spacing: 1px;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+input{
+    margin-bottom: 30px;
+    letter-spacing: 0.8px;
+    color: white;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    border: solid 2px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.confirm{
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.confirm:hover{
+    background: linear-gradient(
+    99deg,
+        #880000,
+        #880d02 38.92%,
+        #930904 65.79%,
+        #d71a09
+    );
+    color: white;
+}
+.title{
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    color: white;
+    background: linear-gradient(
+    99deg,
+        #880000,
+        #b01204 38.92%,
+        #db4d06 65.79%,
+        #d74709
+    );
+    padding: 50px 35px;
+}
+.title h1{
+    font-size: 40px;
+    margin-top: 40px;
+}
+.title .block{
+    margin-top: 40px;
+    height: 2px;
+    width: 400px;
+    background-color: white;
+}
+.title p{
+    font-size: 30px;
+    font-weight: 550;
+    margin-top: 40px;
+}
+.login{
+    margin-top: 40px;
+    width: 50%;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login:hover{
+    border-radius: 0;
+}
+@media (max-width:1200px)
+{   
+    form{
+        grid-area: second;
+    }
+    .title{
+        height: 150px;
+        width: 600px;
+        grid-area: first;
+    }
+    .title h1{
+        margin-top: -20px;
+    }
+    .title .block{
+        margin-top: 20px;
+        width: 600px;
+    }
+    .login{
+        display: none;
+    }
+    .box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "first"
+        "second";
+    }
+}

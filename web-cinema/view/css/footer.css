@@ -1,0 +1,52 @@
+footer{
+    height: 250px;
+    color: white;
+}
+.footer-contact{
+    background-color: rgb(37,38,43);
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.footer-members{
+    background-color: rgba(36,42,55);
+    padding: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro{
+    display: block;
+}
+.footer-ending{
+    background-color: rgb(27,35,48);
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.intro h2{
+    color:rgb(202, 3, 3);
+}
+.home, .contact, .admin, .myticket{
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+}
+.home:hover, .contact:hover, .admin:hover, .myticket:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+@media (max-width:780px){
+    .footer-members{
+        display: block;
+        text-align: center;
+    }
+    .address,.email{
+        margin-top: 10px;
+    }
+}

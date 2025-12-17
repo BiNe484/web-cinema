@@ -1,0 +1,490 @@
+/* Reset CSS để loại bỏ margin và padding mặc định */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  /* Ngăn chặn cuộn ngang không cần thiết */
+}
+
+/* Styling cho sidebar */
+.sidebar {
+  background-color: #1f1f1f;
+  /* Màu nền của sidebar */
+  width: 250px;
+  /* Chiều rộng cố định của sidebar */
+  position: fixed;
+  /* Giữ sidebar cố định khi cuộn */
+  height: 100%;
+  /* Sidebar dài tới chiều cao của viewport */
+  margin-top: 40px;
+  text-align: center;
+  /* Căn giữa nội dung bên trong sidebar */
+  padding: 0;
+  /* Loại bỏ padding trong sidebar */
+  box-shadow: 0 10px 20px rgba(151, 0, 0, 0.6);
+  /* Bóng đổ cho hiệu ứng nổi */
+  border-right: 2px solid #1f1f1f;
+  /* Đường viền bên phải màu đỏ để tăng hiệu ứng nổi */
+  z-index: 1000;
+  /* Đảm bảo sidebar ở trên cùng so với các phần tử khác */
+}
+
+/* Định nghĩa cho các tiêu đề và nút bấm trong sidebar */
+.sidebar h1,
+.sidebar h2 {
+  color: #fff;
+  /* Màu chữ trắng */
+  padding: 20px;
+  /* Thêm padding xung quanh */
+}
+
+.sidebar h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+  /* Reduce or remove the bottom margin */
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 0;
+  /* Reduce padding at the bottom */
+}
+
+.sidebar h2 {
+  font-size: 13px;
+  margin-top: 0;
+  /* Reduce or remove the top margin */
+  margin-bottom: 125px;
+  /* Adjust bottom margin as needed */
+  color: #fff;
+  padding: 0 20px;
+  /* Apply horizontal padding only */
+}
+
+.sidebar button {
+  display: block;
+  /* Mỗi nút chiếm một hàng */
+  width: 100%;
+  /* Chiều rộng nút bằng với sidebar */
+  padding: 25px 0;
+  /* Padding trên và dưới cho nút */
+  margin: 0;
+  /* Loại bỏ margin */
+  background-color: #1f1f1f;
+  /* Màu nền nút tương tự sidebar */
+  color: #fff;
+  /* Màu chữ trắng */
+  border: none;
+  /* Loại bỏ viền */
+  cursor: pointer;
+  /* Con trỏ khi di chuyển vào nút */
+  box-sizing: border-box;
+  /* Bao gồm padding và border trong chiều rộng tổng */
+}
+
+.sidebar button:hover {
+  background-color: #666;
+  /* Màu nền khi hover */
+}
+
+
+.sidebar button.active {
+  background-color: #af0000;
+  /* Màu nền cho nút kích hoạt */
+  color: #fff;
+}
+
+/* Định nghĩa cho nội dung chính */
+.main-content {
+  display: none;
+  /* Ẩn mọi thứ trước khi được kích hoạt */
+  max-width: 600px;
+  /* Giới hạn chiều rộng tối đa */
+  text-align: center;
+  /* Căn giữa tất cả nội dung bên trong */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.main-content h3 {
+  text-align: left;
+  /* Căn giữa tiêu đề */
+  font-size: 32px;
+  font-style: normal;
+  color: #ffffff;
+  padding: 68px 0;
+  padding-left: 270px;
+  /* Thêm đệm bên trái */
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+
+
+.main-content>* {
+  display: block;
+  /* Ẩn tất cả phần tử ban đầu */
+}
+
+.active {
+  display: block;
+  /* Hiển thị phần tử khi nó được kích hoạt */
+}
+
+
+   /* ----------------QUẢN LÍ NGƯỜI DÙNG------------------ */ 
+
+.user-table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-left: 350px;
+  padding: auto;
+  white-space: nowrap;
+  background-color: #000;
+  /* Đặt màu nền của bảng là màu đen */
+  overflow-x: auto;
+  /* Cho phép cuộn ngang khi nội dung vượt quá kích thước */
+
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #fff;
+  /* Đặt viền của ô là màu trắng */
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  min-width: auto;
+  /* Thiết lập chiều rộng tối thiểu */
+  overflow: hidden;
+  /* Ẩn nội dung khi vượt quá kích thước của ô */
+}
+
+.user-table th {
+  background-color: #000;
+  /* Đặt màu nền của tiêu đề là màu đen */
+}
+
+.user-table th,
+.user-table td {
+  color: #fff;
+  /* Đặt màu chữ của các ô là màu trắng */
+}
+
+.user-table th:nth-child(2),
+.user-table td:nth-child(2),
+.user-table th:nth-child(3),
+.user-table td:nth-child(3),
+.user-table th:nth-child(4),
+.user-table td:nth-child(4),
+.user-table th:nth-child(7),
+.user-table td:nth-child(7),
+.user-table th:nth-child(8),
+.user-table td:nth-child(8) {
+  width: auto;
+  /* Loại bỏ chiều rộng 100% */
+  min-width: 200px;
+  /* Thiết lập chiều rộng tối thiểu lớn hơn */
+}
+
+.user-table th:nth-child(5),
+.user-table td:nth-child(5) {
+  width: auto;
+  /* Loại bỏ chiều rộng 100% */
+  min-width: 150px;
+  /* Thiết lập chiều rộng tối thiểu lớn hơn */
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #111;
+  /* Đặt màu nền của các hàng chẵn là màu đen nhạt */
+}
+
+.user-table tr:hover {
+  background-color: #333;
+  /* Đặt màu nền của các hàng khi hover là màu đen nhạt hơn */
+}
+
+/* Định dạng thanh cuộn ngang */
+.user-table::-webkit-scrollbar {
+  height: 10px;
+  /* Chiều cao của thanh cuộn */
+  width: 10px;
+  /* Chiều rộng của thanh cuộn */
+}
+
+/* Màu nền của thanh cuộn */
+.user-table::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Màu nền */
+  border-radius: 5px;
+  /* Độ cong góc */
+}
+
+/* Hover màu của thanh cuộn */
+.user-table::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Màu nền hover */
+}
+
+
+   /* ----------------QUẢN LÝ VÉ ĐÃ ĐẶT -------------------------*/
+
+
+.ticket-table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-left: 350px;
+  padding: auto;
+  white-space: nowrap;
+  background-color: #000;
+  overflow-x: auto;
+}
+
+
+.ticket-table th,
+.ticket-table td {
+  border: 1px solid #fff;
+  /* Đặt viền của ô là màu trắng */
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 140px;
+  /* Thiết lập chiều rộng tối thiểu */
+}
+
+.ticket-table th {
+  background-color: #000;
+  /* Đặt màu nền của tiêu đề là màu đen */
+}
+
+.ticket-table th,
+.ticket-table td {
+  color: #fff;
+  /* Đặt màu chữ của các ô là màu trắng */
+}
+
+/* .ticket-table th:nth-child(1),
+.ticket-table td:nth-child(1),
+.ticket-table th:nth-child(2),
+.ticket-table td:nth-child(2),
+.ticket-table th:nth-child(3),
+.ticket-table td:nth-child(3),
+.ticket-table th:nth-child(4),
+.ticket-table td:nth-child(4),
+.ticket-table th:nth-child(6),
+.ticket-table td:nth-child(6){
+  width: auto;
+  min-width: 150px; 
+}
+.ticket-table th:nth-child(5),
+.ticket-table td:nth-child(5){
+  min-width: 100px;
+}  */
+
+
+.ticket-table tr:nth-child(even) {
+  background-color: #111;
+  /* Đặt màu nền của các hàng chẵn là màu đen nhạt */
+}
+
+.ticket-table tr:hover {
+  background-color: #333;
+  /* Đặt màu nền của các hàng khi hover là màu đen nhạt hơn */
+}
+
+/* Định dạng thanh cuộn ngang */
+.ticket-table::-webkit-scrollbar {
+  height: 10px;
+  /* Chiều cao của thanh cuộn */
+  width: 10px;
+  /* Chiều rộng của thanh cuộn */
+}
+
+/* Màu nền của thanh cuộn */
+.ticket-table::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Màu nền */
+  border-radius: 5px;
+  /* Độ cong góc */
+}
+
+/* Hover màu của thanh cuộn */
+.ticket-table::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Màu nền hover */
+}
+/* animation */
+.main-content {
+  display: none;
+  /* Ẩn mọi thứ trước khi được kích hoạt */
+  max-width: 600px;
+  /* Giới hạn chiều rộng tối đa */
+  text-align: center;
+  /* Căn giữa tất cả nội dung bên trong */
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Khi active */
+.main-content.active {
+  display: block;
+  animation: none; /* Ngăn animation chạy khi nó được hiển thị */
+}
+.box{
+  margin-left: 300px;
+  color: #ffffff;
+}
+.add-picture{
+  text-align: center;
+}
+.banner #banner{
+  width: 200px;
+  height: 320px;
+}
+.mini-picture img{
+  width: 160px;
+  height: 68px;
+}
+form{
+  display: flex;
+  gap:200px;
+}
+label{
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  text-align: left;
+  display: block;
+}
+input, select{
+  border-radius: 4px;
+  width: 400px;
+  height: 32px;
+  display: block;
+  margin-bottom: 20px;
+}
+.add{
+  margin-top: 24px;
+  width: 84px;
+  background-color: rgb(0, 155, 10);
+  color: #ffffff;
+  padding: 15px 0;
+  font-size: 13px;
+  border:none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.data{
+  overflow-x: scroll;
+  text-align: center;
+  height: max-content;
+  width: 1160px;
+  color: rgb(0, 0, 0);
+  padding: 50px 0px;
+}
+.data::-webkit-scrollbar {
+  height: 10px;
+}
+.data::-webkit-scrollbar-thumb {
+  background-color: #676767; /* Màu của phần thân thanh cuộn */
+  border-radius: 4px; /* Độ cong của góc thanh cuộn */
+}
+
+table{
+  border-collapse: collapse;
+  border-color: rgb(255, 255, 255);
+  width: max-content;
+}
+table th{
+  color: white;
+  background-color: rgb(76, 75, 75);
+  padding: 16px;
+  text-align: left;
+}
+table td{
+  color: white;
+  height: 60px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+tbody tr:nth-child(even){
+  background-color: rgb(33, 33, 33, 0.6);    
+}
+tbody tr:hover{
+  color: white;
+  background-color: rgb(134, 25, 25);
+  transition: 0.2s;
+}
+thead th:first-child,
+thead th:last-child,
+tbody tr td:first-child,.lbroomid,
+.lbmovieid, tbody tr td:nth-child(2),
+tbody tr td:nth-child(3),
+.lbminibanner,
+.lbtrailer{
+  text-align: center;
+  padding: 0;
+}
+thead th:first-child{
+  width: max-content;
+}
+thead th:last-child{
+  width: 120px;
+}
+tbody tr td:last-child{
+  text-align: center;
+  padding: 0;
+  gap:10px;
+}
+tbody tr td{
+  vertical-align: middle;
+}
+.delete{
+  cursor: pointer;
+  border: none;
+  height: 30px;
+  width: 84px;
+  text-decoration: none;
+  color: white;
+}
+.delete{
+  background-color: rgb(176, 21, 21);
+}
+.poster img{
+  width: 70px;
+  height: 100px;
+}
+.trailer{
+  width: 220px;
+  height: 100px;
+}
+.mini img{
+  width: 80px;
+  height: 45px;
+}
+.poster, .mini{
+  text-align: center;
+}
+.lbminibanner{
+  width: 200px;
+}
+.lbactors{
+  width: 240px;
+}
+.lbcontent{
+  width: 360px;
+}
+.timeid, .lbmovieid, .lbroomid, .time{
+  width: 120px;
+}

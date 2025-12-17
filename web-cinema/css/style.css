@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    min-width: 300px;
+}
+.name{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+#banner {
+    padding-top: 60px;
+    width: 100%;
+    height: 540px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+}
+.selectcalendar{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4px;
+}
+.selectcalendar button{
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(210, 212, 212);
+}
+.selectcalendar button:hover{
+    background-color: rgb(118, 10, 10);
+    color:white;
+    transition: 0.3s;
+}
+.status{
+    color: white;
+    margin-top: 60px;
+    border: solid;
+    border-width: 0 0 2px 0;
+}
+.notificate{
+    color: white;
+    font-size: 20px;
+}
+.select{
+    margin: 10%;
+    margin-top: 60px;
+    margin-bottom: -5px;
+}
+.section{
+    display: flex;
+    gap: 50px;
+}
+.section>div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.section .poster{
+    border: 2px solid white;
+    width: 230px;
+    height:325px
+}
+.details{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.name p, .category, .release{
+    margin-bottom: 10px;
+}
+.name{
+    font-weight: 800;
+    font-size: 25px;
+}
+.times {
+    display: flex;
+    flex-wrap: wrap;
+}
+.time{
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.time:hover{
+    color: white;
+    background-color: rgb(195, 35, 35);
+    transition: 0.3s;
+}
+footer{
+    margin-top: 50px;
+}
+
+@media (max-width: 640px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .time {
+        justify-content: center;
+    }
+}

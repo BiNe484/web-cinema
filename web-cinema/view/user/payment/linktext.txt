@@ -1,0 +1,61 @@
+https://developers.momo.vn/v3/vi/docs/payment/onboarding/test-instructions/
+test momo atm
+
+//thành công
+Số thẻ: 9704 0000 0000 0018
+Tên chủ thẻ: NGUYEN VAN A
+Ngày phát hành: 03/07
+Mật khẩu OTP: OTP
+
+//Thẻ bị khóa
+Số thẻ: 9704 0000 0000 0026
+Tên chủ thẻ: NGUYEN VAN A
+Ngày phát hành: 03/07
+Mật khẩu OTP: OTP
+
+//Nguồn tiền không đủ
+Số thẻ: 9704 0000 0000 0034
+Tên chủ thẻ: NGUYEN VAN A
+Ngày phát hành: 03/07
+Mật khẩu OTP: OTP
+
+//Hạn mức thẻ
+Số thẻ: 9704 0000 0000 0042
+Tên chủ thẻ: NGUYEN VAN A
+Ngày phát hành: 03/07
+Mật khẩu OTP: OTP
+
+
+test vnpay
+
+//thành công
+Ngân hàng: NCB
+Số thẻ: 9704198526191432198
+Tên chủ thẻ: NGUYEN VAN A
+Ngày phát hành: 07/15
+Mật khẩu OTP:123456
+
+//không đủ số dư
+Ngân hàng: NCB
+Số thẻ: 9704195798459170488
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
+
+
+//thẻ chưa kích hoạt
+Ngân hàng: NCB
+Số thẻ: 9704192181368742
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
+
+//thẻ bị khóa 
+Ngân hàng: NCB
+Số thẻ: 9704193370791314
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
+
+//thẻ hết hạn
+Ngân hàng: NCB
+Số thẻ: 9704194841945513
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
